@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benjamin T. Boyle - WDD 230 - Web Frontend Development course assignment portal">
+    <meta name="author" content="Benjamin T. Boyle">
+    <title>Benjamin T. Boyle - WDD 230 - Web Frontend Development</title>
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Benjamin T. Boyle - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://assets.simpleviewcms.com/simpleview/image/fetch/c_limit,q_75,w_1200/https://lasvegas.simpleviewcrm.com/images/listings/original_welcome-sign.jpg">
+    <meta property="og:url" content="https://benjaminboyle1.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 600px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/DSC_6235.webp" alt="Profile picture of Benjamin T. Boyle">
+        <span>Benjamin T. Boyle</span>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+    <nav id="navMenu" class="hidden">
+        <a href="wdd230/index.html" class="active">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="#">Site Plan</a>
+        <a href="wdd230/form.html">Form</a>
+        <a href="chamber/join.html">Join</a>
+    </nav>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/temple-small.webp" media="(max-width: 600px)">
+                <source srcset="images/temple-medium.webp" media="(max-width: 1000px)">
+                <img src="images/temple-large.webp" alt="Las Vegas Temple" style="width:100%;">
+            </picture>
+            <span>Las Vegas Temple</span>
+        </section>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <div id="links-container">
+                <!-- Dynamic links will be injected here by links.js -->
+            </div>
+        </section>
+        <section class="card" id="weather-card">
+            <h2>Current Weather</h2>
+            <p id="temperature">Temperature: --</p>
+            <div id="weather-condition">
+                <img id="weather-icon" src="" alt="Weather Icon" />
+                <p id="condition">Condition: --</p>
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d51590.71024049162!2d-115.07517349011769!3d36.08326338035429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1720740268235!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Benjamin Tanner Boyle, United States</p>
+        <p id="lastModified">Last Modification: </p>
+        <div class="social-media-icons">
+            <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/yourprofile" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* Custom normalization */
+html {
+    font-size: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+    color: black;
+}

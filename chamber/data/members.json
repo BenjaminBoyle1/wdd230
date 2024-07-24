@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Mother's Brewing Company",
+        "address": "215 S Grant Ave, Springfield, MO 65806",
+        "phone": "(417) 862-0423",
+        "website": "http://mothersbrewing.com",
+        "image": "images.webp",
+        "membershipLevel": "Gold",
+        "description": "A local brewery known for its craft beers and community events."
+    },
+    {
+        "name": "Springfield Art Museum",
+        "address": "1111 E Brookside Dr, Springfield, MO 65807",
+        "phone": "(417) 837-5700",
+        "website": "http://sgfmuseum.org",
+        "image": "springfieldart.webp",
+        "membershipLevel": "Silver",
+        "description": "The city's oldest cultural institution, dedicated to the visual arts."
+    },
+    {
+        "name": "417 Taphouse",
+        "address": "431 S Jefferson Ave, Springfield, MO 65806",
+        "phone": "(417) 862-1114",
+        "website": "http://417taphouse.com",
+        "image": "417.webp",
+        "membershipLevel": "Bronze",
+        "description": "A popular spot offering a wide selection of craft beers and pub food."
+    },
+    {
+        "name": "Big Whiskey's American Restaurant & Bar",
+        "address": "311 Park Central E, Springfield, MO 65806",
+        "phone": "(417) 862-2449",
+        "website": "http://bigwhiskeys.com",
+        "image": "bigwhiskey.webp",
+        "membershipLevel": "Gold",
+        "description": "A casual dining restaurant and bar with a variety of American dishes."
+    },
+    {
+        "name": "Gillioz Theatre",
+        "address": "325 Park Central E, Springfield, MO 65806",
+        "phone": "(417) 863-9491",
+        "website": "http://gillioztheatre.com",
+        "image": "gillioz.webp",
+        "membershipLevel": "Silver",
+        "description": "A historic theatre hosting live performances, films, and special events."
+    },
+    {
+        "name": "Springfield Brewing Company",
+        "address": "305 S Market Ave, Springfield, MO 65806",
+        "phone": "(417) 832-8277",
+        "website": "http://springfieldbrewingco.com",
+        "image": "brewing.webp",
+        "membershipLevel": "Bronze",
+        "description": "A well-loved brewpub offering craft beers and a diverse menu."
+    },
+    {
+        "name": "Hotel Vandivort",
+        "address": "305 E Walnut St, Springfield, MO 65806",
+        "phone": "(417) 832-1515",
+        "website": "http://hotelvandivort.com",
+        "image": "hotel.webp",
+        "membershipLevel": "Gold",
+        "description": "A boutique hotel combining modern luxury with historic charm."
+    }
+]

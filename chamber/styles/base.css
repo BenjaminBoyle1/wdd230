@@ -1,0 +1,181 @@
+/* Normalize CSS */
+@import url('normalize.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #778da9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-size: 2rem;
+}
+
+
+.hamburger {
+    display: block;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: #e0e1dd;
+    text-align: center;
+    font-size: 1.5rem;
+}
+nav a {
+    color: #0d1b2a;
+    text-decoration: none;
+}
+nav.show {
+    display: flex;
+}
+
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: #0d1b2a;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cta {
+    background-color: #1b263b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #0d1b2a;
+}
+
+footer {
+    background-color: #778da9;
+    color: #0d1b2a;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+/* Sidebar Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    color: #2c423f;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    position: relative;
+}
+
+.gallery figure {
+    margin: 0 0 20px 0;
+    padding: 0;
+    position: relative;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery .caption {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Calendar styles */
+#calendar {
+    margin-top: 20px;
+}
+
+#calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendar th, #calendar td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Hover effect for images in the gallery */
+.gallery img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+    .gallery img:hover {
+        transform: none;
+    }
+}

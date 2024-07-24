@@ -1,0 +1,48 @@
+@media screen and (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header span {
+        font-size: 2.5rem; /* Larger font size for medium screens */
+    }
+
+    .hero span {
+        font-size: 2rem;
+    }
+
+    .hero, .map {
+        grid-column: 1 / -1; /* Span both columns */
+    }
+    .form-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+    .form-container form {
+        grid-column: 1;
+    }
+    .form-container .benefits {
+        grid-column: 2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header span {
+        font-size: 3.5rem; /* Even larger font size for large screens */
+    }
+}

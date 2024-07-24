@@ -1,0 +1,293 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    background-color: #2c423f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header span {
+    font-size: 1.5rem; /* Default font size */
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #829191;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    nav.show {
+        display: flex;
+    }
+}
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 4px;
+    width: 5%;
+}
+
+button:hover {
+    background-color: #829191;
+}
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode nav a {
+    color: #e0e0e0;
+}
+
+.dark-mode a {
+    color: #00bfff; /* Light blue color for links in dark mode */
+}
+
+.dark-mode .card {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.dark-mode footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.dark-mode header {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #829191;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a.active {
+    background-color: #c5c5c5;
+    color: black;
+}
+
+main {
+    display: block;
+    padding: 20px;
+    max-width: 1200px;
+    align-self: center;
+    margin: auto;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #000000;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: #2c423f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.card li {
+    padding: 5px;
+}
+
+.card p {
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #2c423f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.social-media-icons {
+    margin-top: 10px;
+}
+
+.social-media-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-media-icons a:hover {
+    color: #00bfff; /* Light blue color on hover */
+}
+
+/* Overlay styles */
+.hero {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero span {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+/* Map styles */
+.map iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+/* Style for the links container */
+#links-container {
+    margin-top: 20px;
+}
+
+/* Style for each week section */
+.week-section {
+    margin-bottom: 20px;
+}
+
+/* Additional style to ensure links are inline */
+.week-section a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px; /* Adjust the spacing as needed */
+    padding: 5px 10px;
+
+}
+.separator {
+    margin: 0 10px; /* Adjust the spacing as needed */
+    color: #000;
+}
+#weather-condition {
+    display: flex;
+    align-items: center;
+}
+
+#weather-icon {
+    margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+#weather-condition p {
+    margin: 0;
+}
+/* Directory styles */
+#directory {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+#directory.list-view {
+    display:block;
+}
+
+#directory.list-view .member {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+#directory.list-view .member img {
+    display: none;
+}
+.menu {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #2c423f;
+    text-align: center;
+}
+
+.menu button {
+    padding: 1rem;
+    font-weight: 700;
+}
+.member {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}

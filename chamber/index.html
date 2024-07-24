@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Springfield Chamber of Commerce</title>
+    <meta name="description" content="Springfield Chamber of Commerce - Promoting business and community engagement in Springfield.">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Springfield Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="http://yourdomain.com/chamber">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 600px)">
+</head>
+<body>
+    <header>
+        <h1>Springfield Chamber of Commerce</h1>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </header>  
+    <nav id="navMenu" class="hidden">
+        <a href="index.html" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Events</a>
+        <a href="#">Join</a>
+        <a href="#">Contact</a>
+    </nav>    
+    <main>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Hero Image">
+            <div class="hero-text">
+                <h2>Welcome to the Springfield Chamber of Commerce</h2>
+                <p>Promoting business and community engagement.</p>
+                <a href="#" class="cta">Join Us Today</a>
+            </div>
+        </section>
+        <div class="cards-container">
+            <section class="card events">
+                <h2>Current Events</h2>
+                <p>Stay updated with our latest events and activities.</p>
+            </section>
+            <section class="card weather">
+                <h2>Weather</h2>
+                <p>Current weather in Springfield: 76°F and sunny.</p>
+            </section>
+            <section class="card spotlights">
+                <h2>Company Spotlights</h2>
+                <div class="spotlight">
+                    <h3>Company 1</h3>
+                    <p>Leading business in Springfield.</p>
+                </div>
+                <div class="spotlight">
+                    <h3>Company 2</h3>
+                    <p>Innovative solutions for our community.</p>
+                </div>
+                <div class="spotlight">
+                    <h3>Company 3</h3>
+                    <p>Supporting local businesses.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Contact us: info@springfieldchamber.com | (555) 123-4567</p>
+        <p>&copy; <span id="year"></span> Springfield Chamber of Commerce | Project for WDD 230</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>

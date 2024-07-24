@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #2c423f;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+}
+
+body {
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="range"] {
+    width: calc(100% - 50px); /* Allow space for output */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+output {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    text-align: center;
+}
+
+button.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button.submit-btn:hover {
+    background-color: #45a049;
+}
+
+button.dark-mode-toggle {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 4px;
+    width: 5%;
+}
+
+button.dark-mode-toggle:hover {
+    background-color: #829191;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Springfield Chamber of Commerce and Discover</title>
+    <meta name="description" content="Springfield Chamber of Commerce - Discover.">
+    <meta name="author" content="Benjamin T. Boyle">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Springfield Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://benjaminboyle1.github.io/wdd230/chamber/discover.html">
+    <meta property="og:url" content="https://benjaminboyle1.github.io/wdd230/chamber/discover.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 600px)">
+</head>
+<body>
+    <header>
+        <h1>Springfield Chamber of Commerce</h1>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </header>  
+    <nav id="navMenu" class="hidden">
+        <a href="index.html" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Events</a>
+        <a href="#">Join</a>
+        <a href="#">Contact</a>
+    </nav>    
+    <main>
+        <div class="container">
+            <aside class="sidebar">
+                <div class="visit-message"></div>
+                <h2>Economic Statistics</h2>
+                <ul>
+                    <li>Population: 1,234,567</li>
+                    <li>GDP: $123 billion</li>
+                    <li>Unemployment Rate: 4.5%</li>
+                </ul>
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>July 15: Annual Parade</li>
+                    <li>August 1: Music Festival</li>
+                    <li>September 10: Food Fair</li>
+                </ul>
+                <h2>Calendar</h2>
+                <div id="calendar"></div>
+            </aside>
+            <section class="content">
+                <h1>Local Photos of Interest</h1>
+                <div class="gallery">
+                    <figure>
+                        <img data-src="images/artfest.webp" alt="Photo 1" class="lazy">
+                        <span class="caption">Art Festival 2023</span>
+                    </figure>
+                    <figure>
+                        <img data-src="images/carnival.webp" alt="Photo 2" class="lazy">
+                        <span class="caption">Fall Carnival</span>
+                    </figure>
+                    <figure>
+                        <img data-src="images/topbusiness.webp" alt="Photo 3" class="lazy">
+                        <span class="caption">Top Businesses</span>
+                    </figure>
+                    <figure>
+                        <img data-src="images/management.webp" alt="Photo 4" class="lazy">
+                        <span class="caption">Management Seminar</span>
+                    </figure>
+                    <figure>
+                        <img data-src="images/celebrate.webp" alt="Photo 5" class="lazy">
+                        <span class="caption">Springfield Art Museum</span>
+                    </figure>
+                    <figure>
+                        <img data-src="images/events.webp" alt="Photo 6" class="lazy">
+                        <span class="caption">Event Center</span>
+                    </figure>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Contact us: info@springfieldchamber.com | (555) 123-4567</p>
+        <p>&copy; <span id="year"></span> Springfield Chamber of Commerce | Project for WDD 230</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/vistCounter.js"></script>
+    <script src="scripts/calendar.js"></script>
+    <script src="scripts/lazyLoad.js"></script>
+    
+</body>
+</html>
